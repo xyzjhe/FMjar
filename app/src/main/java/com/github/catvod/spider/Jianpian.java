@@ -24,7 +24,7 @@ import java.util.Map;
  */
 public class Jianpian extends Spider {
 
-    private final String siteUrl = "http://api2.rinhome.com";
+    private final String siteUrl = "http://112.124.0.131:20000";
     private String extend;
 
     private Map<String, String> getHeader() {
@@ -36,7 +36,8 @@ public class Jianpian extends Spider {
 
     @Override
     public void init(Context context, String extend) throws Exception {
-        this.extend = extend;
+        //this.extend = extend;
+        this.extend = "https://raw.gitmirror.com/bestpvp/CatVodSpider_fongmi/main/json/jianpian.json";
     }
 
     @Override
